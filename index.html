@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;1,400&display=swap"
+        rel="stylesheet">
+    <title>ROUBO DO DIAMANTE</title>
+</head>
+
+<body>
+    <main>
+        <h1>Roubo do Diamante</h1>
+        <div class="passo ativo" id="passo-0">
+            <p>Você está na frente do banco, prestes a realizar o golpe mais audacioso da sua vida: roubar o maior diamante do mundo. A segurança é rigorosa e o tempo é essencial. Você precisa ser astuto e estratégico para garantir que a missão seja um sucesso.</p>
+            <button class="btn-proximo" data-proximo="2A">Abordagem Silenciosa: Entre pela entrada dos funcionários.</button>
+            <button class="btn-proximo" data-proximo="2B">Invasão Direta: Vá pela porta principal e enfrente a segurança de frente.</button>
+        </div>
+
+        <div class="passo" id="passo-2A">
+            <p>Você se infiltra na entrada dos funcionários, tomando cuidado para não ser notado. Ao entrar, você se depara com um corredor que leva ao cofre, mas a porta está trancada.</p>
+            <button class="btn-proximo" data-proximo="3A">Tentar forçar a porta.</button>
+            <button class="btn-proximo" data-proximo="3B">Procurar uma chave ou um cartão magnético.</button>
+        </div>
+
+        <div class="passo" id="passo-2B">
+            <p>Você entra pela porta principal e imediatamente chama a atenção dos guardas. Eles se aproximam, prontos para agir.</p>
+            <button class="btn-proximo" data-proximo="3C">Tentar passar por eles sem ser notado.</button>
+            <button class="btn-proximo" data-proximo="3D">Confrontá-los e tentar incapacitar os guardas.</button>
+        </div>
+
+        <div class="passo" id="passo-3A">
+            <p>Você faz muito barulho e a porta cede. Infelizmente, o alarme dispara, alertando a segurança. Você é rapidamente capturado.</p>
+            <button class="btn-proximo" data-proximo="0">FIM DE JOGO</button>
+        </div>
+
+        <div class="passo" id="passo-3B">
+            <p>Você encontra a chave em uma mesa próxima. Com ela, consegue abrir a porta do cofre. O diamante brilha diante de você.</p>
+            <button class="btn-proximo" data-proximo="A">Pegar o diamante e fugir rapidamente.</button>
+            <button class="btn-proximo" data-proximo="B">Ficar admirando o diamante por um momento.</button>
+        </div>
+
+        <div class="passo" id="passo-3C">
+            <p>Você consegue passar pelos guardas com habilidade e avança em direção ao cofre, mas o caminho está cheio de armadilhas.</p>
+            <button class="btn-proximo" data-proximo="C">Seguir em frente com cautela.</button>
+            <button class="btn-proximo" data-proximo="D">Tentar correr e evitar as armadilhas.</button>
+        </div>
+
+        <div class="passo" id="passo-3D">
+            <p>A luta atrai atenção, e você acaba sendo capturado. O plano falha, e você deve enfrentar as consequências.</p>
+            <button class="btn-proximo" data-proximo="0">FIM DE JOGO</button>
+        </div>
+
+        <div class="passo" id="passo-A">
+            <p>Você sai do banco com o diamante em mãos e consegue escapar antes que a polícia chegue. Você se torna uma lenda na cidade, conhecido como o ladrão que desafiou a segurança e venceu.</p>
+            <button class="btn-proximo" data-proximo="0">FIM DE JOGO VOCÊ VENCEU!!!!</button>
+        </div>
+
+        <div class="passo" id="passo-B">
+            <p>Perdido em seus próprios pensamentos, você não percebe a aproximação dos guardas. Eles o capturam antes que você consiga escapar.</p>
+            <button class="btn-proximo" data-proximo="0">FIM DE JOGO</button>
+        </div>
+
+        <div class="passo" id="passo-C">
+            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="A">Pegar o diamante e fugir rapidamente.</button>
+            <button class="btn-proximo" data-proximo="B">Parar para planejar sua saída.</button>
+        </div>
+
+        <div class="passo" id="passo-D">
+            <p>Você não consegue evitar as armadilhas e acaba sendo capturado pela segurança.</p>
+            <button class="btn-proximo" data-proximo="0">FIM DE JOGO</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
